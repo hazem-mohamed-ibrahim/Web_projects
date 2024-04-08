@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(41, 41, 41);
+    background-image: url(../Images/the-best-16-purple-1080p-blue-gaming-background-popularpicinterest.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/******************************/
+/*          key frames        */
+/******************************/
+
+@keyframes fade-up {
+    
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+}
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/******************************/
+/*           header           */
+/******************************/
+
+header{
+    background-image: url(../Images/Mainlogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 80px;
+    background-color: black;
+    animation: fade-down 0.9s;
+    
+}
+
+
+.links_header{
+    box-sizing: border-box;
+    font-family: roboto, Microsoft JhengHei, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 80px;
+
+}
+
+.links_header .link{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/******************************/
+/*           login            */
+/******************************/
+.login_form{
+    width: 32%;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46 , 0.9);
+    padding-left: 100px;
+    margin-left: 450px;
+    animation: fade-up 0.9s;
+}
+
+.Signin_form{
+    width: 32%;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46 , 0.9);
+    padding-left: 100px;
+    margin-left: 450px;
+    animation: fade-up 0.9s;
+    height: 620px;
+    display: none;
+}
+
+
+.label_login{
+    padding: 16px;
+    width: 73%;
+    margin: 30px 5px;
+    border: 1px solid #2B2A4C;
+    outline: none;
+    border-radius: 20px;
+
+}
+
+#title_login{
+    margin: 40px;
+    padding-left: 110px;
+    padding-top: 50px;
+    color: #ac2323;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+
+#textcheck{
+    padding-left: 10px;
+    display: flex;
+    gap: 5px;
+    color: red;
+}
+
+.forgot{
+    padding-left: 135px;
+}
+
+#forgot_pass{
+    text-decoration: none;
+}
+
+#forgot_pass:hover{
+    color: #ac2323;
+}
+
+#forgot_pass:visited{
+    color: #ac2323;
+}
+
+.login-button{
+    padding: 11px 60px;
+    border-radius: 17px;
+    margin: 30px 52px;
+    width: 300px;
+    background-color: #c5feff;
+    color: #954242;
+}
+
+#dont_have_account{
+    display: flex;
+    gap: 5px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+#dont_have_account p{
+    color: rgb(0, 217, 255);
+}
+
+#dont_have_account a{
+    text-decoration: none;
+}
+
+#dont_have_account a:hover{
+    color: #2385ac;
+}
+
+#dont_have_account a:visited{
+    color: #ac2323;
+}

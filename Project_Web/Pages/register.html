@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/Mainlogo.png">
+    <link rel="stylesheet" href="../Styles/Register.css">
+    <title>GamingLaptops</title>
+</head>
+<body>
+    <header>
+        <div class="links_header">
+            <a class="link" href="../Pages/Home.html">PRODUCTS</a>
+            <a class="link" href="#">INNOVATION</a>
+            <a class="link" href="#">DOWNLOADS</a>
+            <a class="link" href="#">COMMUNITYS</a>
+            <a class="link" href="#">SUPPORT</a>
+            <a class="link" href="#">SHOP</a>
+            <a class="link" href="#">CONTACT</a>
+        </div>
+    </header>
+
+    <form class="login_form">
+        <h2 id="title_login">Login</h2>
+
+        <input type="text" title="username for login" placeholder="Username" class="label_login" required>
+        <input type="password" title="password for login" placeholder="Password" class="label_login" required>
+
+        <div id="textcheck">
+            <label for="check" title="save my data">Remember Me</label>
+            <input type="checkbox" id="check" title="save my data check">
+
+            <div class="forgot">
+                <a href="#" id="forgot_pass">Forgot Password ?</a>
+            </div>
+        </div>
+  
+        <button class="login-button" type="submit">Login Now</button>
+        <div id="dont_have_account">
+            <p>Don't have Account?</p>
+            <div>|</div>
+            <a id="signInLink" onclick="showSignInForm()" href="#">Signup</a>
+        </div>
+    </form>
+
+    <form class="Signin_form">
+        <h2 id="title_login">Signin</h2>
+
+        <input type="text" title="username for login" placeholder="Username" class="label_login" required>
+        <input type="text" title="email for login" placeholder="Email" class="label_login" required>
+        <input type="password" title="password for login" placeholder="Password" class="label_login" required>
+
+        <div id="textcheck">
+            <label for="check" title="save my data">Remember Me</label>
+            <input type="checkbox" id="check" title="save my data check">
+
+            <div class="forgot">
+                <a href="#" id="forgot_pass">Forgot Password ?</a>
+            </div>
+        </div>
+  
+        <button class="login-button" type="submit">Signin Now</button>
+        <div id="dont_have_account">
+            <p>Already have Account?</p>
+            <div>|</div>
+            <a id="loginLink"  onclick="showLoginForm()" href="#">Login</a>
+        </div>
+
+    </form>
+
+
+    <script src="../Scripts/Register.js"></script>
+    
+</body>
+</html>

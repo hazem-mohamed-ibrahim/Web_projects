@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(41, 41, 41);
+    height: 900px;
+    background-image: url(../Images/the-best-16-purple-1080p-blue-gaming-background-popularpicinterest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr{
+    margin: 0px 120px 0px 120px;
+}
+
+
+/******************************/
+/*          key frames        */
+/******************************/
+
+@keyframes fade-up {
+    
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+}
+
+
+@keyframes fade-up2 {
+    
+    0%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+
+    }
+
+}
+
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down2 {
+    0%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+}
+
+/******************************/
+/*       Media Queries        */
+/******************************/
+
+@media only screen and (max-width: 1200px) {
+
+    .search{
+        animation: fade-down2 0.7s;
+        transform: scale(0%);
+    }
+
+    .links_header{
+        animation: fade-down2 0.7s;
+        transform: scale(0%);
+    }
+
+    .section1{ 
+        background-attachment: fixed;
+        background-position: center;
+
+    }
+
+    .section1_content{
+        margin-left: 50px;
+    }
+
+    .video_reviews .video {
+        padding-left: 15px;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+    footer .box {
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+@media only screen and (width > 1200px) {
+
+    .search{
+        animation: fade-down 0.7s;
+
+    }
+
+    .links_header{
+        animation: fade-down 0.7s;
+
+    }
+}
+
+
+/* @media only screen and (width < 500px) {
+    .section1{ 
+        background-attachment: fixed;
+    }
+
+} */
+/******************************/
+/*           header           */
+/******************************/
+
+header{
+    background-image: url(../Images/Mainlogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: 80px;
+    background-color: black;
+    animation: fade-down 0.9s;
+    
+}
+
+
+.links_header{
+    box-sizing: border-box;
+    font-family: roboto, Microsoft JhengHei, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 80px;
+
+}
+
+.links_header .link{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/******************************/
+/*         search bar         */
+/******************************/
+
+.search_bar{
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    padding: 10px;
+    float: right;
+    margin-top: -65px;
+    width: fit-content;
+    gap: 10px;
+
+}
+
+.search_bar .search{
+    border-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.search_bar #img_bar{
+    background-image: url(../Images/search.svg);
+    background-repeat: no-repeat;
+    border-color: rgb(0, 0, 0);
+    background-size: contain;
+    background-position: center;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    height: 35px;
+    width: 35px;
+}
+
+.search_bar #img_bar:hover{
+    transition: ease-in 0.2s;
+    background-color: red;
+}
+
+/******************************/
+/*          section1          */
+/******************************/
+
+.section1{
+    background-image: url(../Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; Set to 100% to take the full width of the viewport */
+    /* height: auto; Change from fixed height to auto */
+    /* padding: 10% 2%;  */
+    width: auto;
+    height: 750px;
+    animation: fade-up 0.9s;
+}
+
+.section1_content{
+    padding: 250px 0px;
+    text-align: center;
+    animation: fade-down 0.9s;
+    margin-right: 50px;
+    /* padding: 10% 5%; Adjusted for smaller screens using relative units */
+    text-align: center;
+}
+
+.register_link{
+    background-color: red;
+    border-radius: 20px;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.register_link:hover{
+    color: rgb(255, 0, 0);
+    background-color: black;
+}
+
+
+.section1_content h1{
+    color: white;
+    padding-bottom: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section1_content p{
+    color: white;
+    padding-bottom: 80px;
+    font-size: xx-large;
+}
+
+/*****srollbar style***/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #040101;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #d70000;
+}
+
+/******************************/
+/*       video reviews        */
+/******************************/
+
+.video_reviews{
+    padding-left: 75px;
+    padding-top: 40px;
+    background-color: black;
+    animation: fade-up 0.9s;
+}
+
+.video_reviews .video{
+    padding-right: 60px;
+    padding-bottom: 70px;
+}
+
+.video_reviews h1{
+    font-family: Roboto,"Segoe UI",Arial,"PingFang TC","Microsoft JhengHei","Microsoft YaHei",sans-serif;
+    margin-bottom: 70px;
+    text-align: center;
+    padding-right: 90px;
+    color: #fff;
+}
+/******************************/
+/*          Products          */
+/******************************/
+.arrow_left{
+    background-image: url(../Images/reshot-icon-arrow-left-6HG5UADYR9.svg);
+    background-repeat: no-repeat;
+    background-color: rgb(56, 89, 195);
+    border-radius: 40px;
+    border: solid 1px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin-top: 110px;
+    margin-left: 5px;
+}
+
+.arrow_right{
+    background-image: url(../Images/reshot-icon-arrow-right-ZP2WDL9B8N.svg);
+    background-repeat: no-repeat;
+    background-color: rgb(56, 89, 195);
+    border-radius: 40px;
+    border: solid 1px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin-top: 110px;
+    margin-right: 5px;
+}
+
+.products{
+    background-image: url(../Images/the-best-16-purple-1080p-blue-gaming-background-popularpicinterest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-left: 60px; */
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.products .product{
+    background-image: url(../Images/backgroundforproduct.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease-in-out; /* Added transition property */
+}
+
+.products .product:hover {
+    transform: scale(1.1); /* Increase the scale on hover */
+}
+
+.product #buy{
+    padding: 20px 35px;
+    background-color: rgb(31, 69, 192);
+    border-radius: 9px;
+    color: #fff;
+    border-color: #0048d7;
+    cursor: pointer;
+}
+
+.product #buy:hover{
+      background-color: #d70000;
+      border-color: #d70000;
+      transition: ease-in 0.2s;
+}
+
+.product p{
+    font-family: roboto, Microsoft JhengHei, sans-serif;
+    color: white;
+}
+
+/******************************/
+/*          footer            */
+/******************************/
+footer{
+    display: flex;
+    background-color: #040101;
+    padding: 0px 30px 0px 30px;
+}
+
+footer p{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+footer h4{
+    color: white;
+}
+
+footer h2{
+    color: white;
+    padding-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer .box{
+    padding-right: 70px;
+    padding-top: 30px;
+}
+
+
+footer .box h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 20px;
+    font-size: x-large;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 43, 43);
+    text-decoration-thickness: 5px;
+}
+
+footer .box a{
+    text-decoration: none;
+    display: grid;
+    padding-bottom: 20px;
+    font-size: large;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer .box a:hover{
+    color: red;
+}
+
+
+.social{
+    margin: 13px 0px;
+    padding: 0;
+}
+
+.social .buttons{
+    border-radius: 40px;
+    padding: 20px 20px;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background-color: red;
+}
+
+.social .buttons:hover{
+    background-color: black;
+    transition: ease-in 0.2s;
+}
+
+.social .buttons:nth-child(1){
+    background-image: url(../Images/social/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.social .buttons:nth-child(2){
+    background-image: url(../Images/social/tiwwter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.social .buttons:nth-child(3){
+    background-image: url(../Images/social/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}

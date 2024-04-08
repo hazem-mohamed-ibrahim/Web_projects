@@ -1,0 +1,1220 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+/* -------------------------------------------------------------------------- */
+/*                                     nav                                    */
+/* -------------------------------------------------------------------------- */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    padding: 0 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               hero-section                                 */
+/* -------------------------------------------------------------------------- */
+
+.hero-section{
+    background-image: url(../Assets/main/bd-img.png);
+    height: 510px;
+    width: 100%;
+    padding: 0;
+    margin-top: -38px;
+}
+
+.hero-section img{
+    float: right;
+}
+
+
+.hero-content h1{
+    font-size: 2.55rem;
+    color: #253d4e;
+    padding: 80px 70px;
+    font-family: "Quicksand",sans-serif;
+}
+.hero-content p{
+    font-size: x-large;
+    color: #838383;
+    padding: 0px 70px;
+    margin-top: -30px;
+
+}
+
+#subscribe{
+    display: flex;
+    padding: 70px 70px;
+}
+
+#subscribe #icon-sub{
+    background-image: url(../Assets/iconss/send.svg);
+    background-position: center;
+    background-color: white;
+    padding: 10px 20px;
+    background-repeat: no-repeat;
+}
+
+#subscribe #mail-sub{
+    border: 0;
+    width: 220px;
+    outline: none;
+    height: 50px;
+    padding-left: 20px;
+    margin-left: -10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#subscribe #line-sub{
+    color: rgb(139, 139, 139);
+    z-index: 1;
+    padding-top: 14px;
+}
+
+#subscribe #subscribe-button{
+    background-color: #3bb77e;
+    color: white;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#subscribe #subscribe-button:hover{
+   
+    background-color: #253d4e;
+    color: #3bb77e;
+    transition: all .4s ease-in-out;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Banner_1                                  */
+/* -------------------------------------------------------------------------- */
+/******************************************************************************************************/
+
+.banner_1
+{
+    background-image: url(../Assets/main/ads-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 650px;
+    height: 270px;
+    transform: translate(15%, 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.details
+{
+    padding: 40px;
+    width: 160px;
+    height: 195px;
+    position: absolute;
+    top: 20px;
+    left: 210px;
+}
+
+.banner_1 .details span
+{
+    background-color: #ffd480;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    left: -168px;
+    border-radius: 2px;
+    font-size: .8rem;    
+    font-weight: 600;
+}
+
+.banner_1 .details h2
+{
+    width: 260px;
+    height: 30px;
+    color: #253d4e;
+    transform: translate(-80%, 36%);
+}
+
+.banner_1 .details h4
+{
+    width: 235px;
+    height: 40px;
+    color: #838383;
+    font-weight: 600;
+    transform: translate(-89%, 40%);
+}
+
+.banner_1 button
+{
+    outline: none;
+    border: none;
+    background-color: #3bb77e;
+    color: #fff;
+    width: 130px;
+    height: 38px;
+    padding: 10px 20px;
+    transform: translate(-160%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.banner_1 button:hover
+{
+    width: 155px;
+    height: 43px;
+    margin: -5px 30px 0 25px;
+    font-size: 1.1rem;
+}
+
+.banner_1 .man
+{
+    margin-right: 80px;
+    width: 140px;
+    height: 220px;
+    transform: translate(190%, 25px);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Banner 2                                  */
+/* -------------------------------------------------------------------------- */
+.banner-2 .banner-img1{
+   background-image: url(../Assets/main/ads-2.png);
+   width: 620px;
+   height: 270px;
+   margin: -80px 770px;
+}
+
+.banner-img2{
+    background-image: url(../Assets/main/offer2-img.png);
+    background-repeat: no-repeat;
+    height: 100%; 
+    width: 100%;
+    background-size: 200px;
+    background-position: right;
+    padding-top: 80px;
+}
+
+.banner-content{
+    padding-top: 180px;
+}
+
+.banner-content p:nth-child(1){
+    background-color: #3bb77e;
+    color: #def9ec;
+    width: 50px;
+    height: 20px;
+    padding: 2px 6px 2px 4px;
+    margin: -340px 820px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+
+.banner-content h3{
+    color: #253d4e; 
+    outline: 0;
+    border: 0;
+    margin: 0;
+    font-family: "Quicksand",sans-serif;
+    float: right;
+    margin: 360px 617px 0px 0px;
+    font-size: 1.5rem;
+}
+.banner-content p:nth-child(3){
+    padding: 420px 0px 0px 819px;
+    font-size: 1rem;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    font-size: large;
+    color: #838383;
+}
+
+#ordernow{
+    background-color: #3bb77e;
+    color: white;
+    border: 0;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    float: right;
+    margin: 30px 642px;
+}
+#ordernow:hover{
+    transform: scale(1.2); 
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                            first_logo_Categories                           */
+/* -------------------------------------------------------------------------- */
+nav .brows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    background-color: #46af7e;
+    padding: 0px;
+    color: #ffffff;
+    border-radius: 3px;
+
+}
+nav .brows img {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    padding-left: 10px;
+    
+}
+nav .brows img:hover {
+    background-color: rgb(0, 253, 114);
+    transition: 0.5s ease-in-out;
+}
+nav .brows span {
+    font-family: 'Quicksand', sans-serif;    
+    position: absolute;
+    left: 80px;
+    cursor: pointer;
+
+} 
+
+/* -------------------------------------------------------------------------- */
+/*                                 List_items                                 */
+/* -------------------------------------------------------------------------- */
+
+nav ul li {
+    padding: 10px 20px;
+    display: inline-flex;
+    list-style-type: none;
+}
+nav ul li a {
+    font-family: 'Quicksand', sans-serif;    
+    text-decoration: none;
+    color: #253d4e;
+}
+
+nav ul li a:focus, a:hover {
+    color: #159e5e;
+}
+nav ul li img {
+    width: 25px;
+    height: 25px;
+    /* margin: 6px; */
+    margin-right: 10px;
+    margin-bottom: -3px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Phone_Section                               */
+/* -------------------------------------------------------------------------- */
+nav .phone * {
+    margin-left: 7px;
+}
+
+ul{
+    display: flex;
+}
+
+nav .phone img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin-bottom: -5px;
+}
+
+nav .phone span {
+    color: #1fcc7b;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+nav .phone .span-2 {
+    color: black;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: large;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Loading_Screen                               */
+/* -------------------------------------------------------------------------- */
+
+#load_page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #159e5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;  /* higher index to make sure to put it at the top of other elements */
+}
+
+
+/********************/
+
+.summary{
+    display: flex;
+    gap: 150px;
+    padding-left: 120px;
+    transform: translateY(50%);
+
+
+}
+
+.best{
+    background-image: url(../Assets/iconss/svgexport.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+   
+}
+
+
+
+.best2{
+    background-image: url(../Assets/iconss/svgex-port.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+
+}
+
+
+
+.best3{
+    background-image: url(../Assets/iconss/car.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+
+}
+
+.Deals{
+    padding-left: 70px;
+    font-size: 1.1rem;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    color: #838383;
+    
+}
+
+
+.Deals p:nth-child(1){
+   color: #000;
+   font-family: Arial, Helvetica, sans-serif;
+   /*padding-top: 20px;*/
+}
+
+
+/*******************/
+
+
+/*-----------------------------------------------------------------------*/
+/*--                             footer1                                 */
+/*-----------------------------------------------------------------------*/
+#hr1{
+    margin-top: 0;
+    margin-bottom: 0;
+    transform: translateY(5000%);
+    padding: 0 0px;
+    width: 85%;
+}
+
+.info{
+    transform: translate(10%,70%);
+    display: flex;
+    gap: 70px;
+    
+}
+
+.all #logo{
+    transform: scale(150%);
+    padding-left:  50px;
+    padding-bottom: 20px;
+  
+}
+
+
+
+.all .Info{
+    display: flex;
+    padding-block: 6px;
+    justify-content: left;
+
+    
+}
+
+
+
+.info button:hover{
+    color: #3bb77e;
+    transition: all .4s ease-in-out;
+}
+
+
+
+.all .Info button{
+ border: 0;
+ cursor: pointer;
+ background-color: #ffffff;
+ font-weight: 700;
+ font-size: .8823529412rem;
+ z-index: 1;
+
+}
+
+
+
+.all2 p{
+    margin-top: -10px;
+    margin-left: 5px;
+    font-family: "Quicksand",sans-serif;
+    font-size: large;
+    font-weight: 700;
+    color: #253d4e;
+}
+
+.all2 .information{
+    display: flex;
+    outline: 0;
+    border: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: .8823529412rem;
+    padding-block: 8px;
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+/*--                             footer2                                 */
+/*-----------------------------------------------------------------------*/
+
+.second-footer{
+    display: flex;
+}
+
+#hr2{
+    margin-top: 200px;
+    padding: 0 0px;
+    width: 85%;
+}
+
+.second-footer p{
+    margin: 37px 115px;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.second-footer span{
+    color: #3bb77e;
+}
+
+
+.payment-img{
+    padding: 33px 180px;
+    margin: 0;
+}
+
+
+
+.social-buttons{
+    gap: 20px;
+    margin: 13px 0px;
+    padding: 0;
+}
+
+.social-buttons .Button{
+    border-radius: 100px;
+    padding: 20px 20px;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background-color: #3bb77e;
+}
+.social-buttons .Button:nth-child(1){
+    background-image: url(../Assets/social/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.social-buttons .Button:nth-child(2){
+    background-image: url(../Assets/social/linkedin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.social-buttons .Button:nth-child(3){
+    background-image: url(../Assets/social/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.social-buttons .Button:nth-child(4){
+    background-image: url(../Assets/social/tiwwter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+ .social-buttons :hover{
+    background-color: #253d4e;
+    transition: all .4s ease-in-out;
+ }
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                            Explore Categories (1)                          */
+/* -------------------------------------------------------------------------- */
+
+/* Explore Categories Header */
+
+#Explore_cate 
+{
+    padding: 40px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#Explore_cate #Categories_head
+{
+    margin: 20px;
+    
+}
+
+#Explore_cate #Categories_head h1 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #253d4e;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    transform: translateX(50px);
+    font-family: 'Quicksand', sans-serif;  
+}
+
+#Categories_list {
+    display: flex; 
+    position: absolute; /* hna kman */
+    /* top: 410px; */
+    right: 0px;
+    top: 700px;
+    list-style: none;
+    padding: 0px 30px;
+    
+}
+
+#Categories_list li  
+{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Quicksand', sans-serif;  
+    font-weight: 600;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+}
+
+#Categories_list li:hover
+{
+    color: #3bb77e;
+}
+
+#Categories_list .All
+{
+    color: #3bb77e;
+    
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/* Arrow */
+
+
+#Explore_cate #products_cards .arrow
+{
+    background-color: rgba(231,231,231,.9058823529);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#Explore_cate #products_cards .arrow:hover
+{
+    background-color: #3bb77e;
+}
+
+#Explore_cate #products_cards .left_arrow
+{
+    transform: translate(-70%, 30%);
+}
+
+#Explore_cate #products_cards .right_arrow
+{
+    transform: translate(30%, 20%);
+}
+
+#Explore_cate #products_cards .right_arrow img
+{
+    transform: rotate(180deg);                  /* the right arrow was in the icon rotated to left, so I used this function to modify the shape of the arrow. */
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/* Products Cards */
+
+#Explore_cate #products_cards 
+{
+    padding: 25px 40px;
+    margin: 0 10px;
+    height: 20px;
+    width: calc(100%/3);
+    transform: translate(-150%, 290%); /* hna */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+#Explore_cate #products_cards div:not(.arrow)
+{
+    margin: 10px;
+    padding: 30px;
+    width: 160px;
+    height: 210px;
+}
+
+#Explore_cate #products_cards div p, h3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Explore_cate #products_cards div p
+{
+    color: #838383;
+    font-weight: 20;
+}
+
+#Explore_cate #products_cards .peach
+{
+    background-color: #DEF9EC;
+}
+
+#Explore_cate #products_cards .vegatables
+{
+    background-color: #FFF7E6;
+}
+
+#Explore_cate #products_cards .strawberry
+{
+    background-color: #F3524480;
+}
+
+#Explore_cate #products_cards .apple
+{
+    background-color: #9C8ACF98;
+}
+
+#Explore_cate #products_cards .orange
+{
+    background-color: #DEF9EC;
+}
+
+#Explore_cate #products_cards .potato
+{
+    background-color: #FFF7E6;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------- */
+/*                                 Categories                                 */
+/* -------------------------------------------------------------------------- */
+
+.Categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 300px;
+ 
+}
+
+
+.Categories .first_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+ 
+    
+}
+
+.Categories h1 {
+    font-family: 'Quicksand', sans-serif;  
+    margin: 0;
+
+}
+.Categories ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding-right: 100px;
+    
+}
+
+.Categories ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Quicksand', sans-serif;    
+
+}
+.Categories ul li:first-child a {
+    color: #159e5e;
+}
+.Categories ul li a:hover {
+    color: #159e5e;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Products                                  */
+/* -------------------------------------------------------------------------- */
+
+.Categories .Products {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.Categories .Products .left, .right{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(210, 210, 210);
+    background-image: url(../Assets/iconss/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+.Categories .Products .left:hover, .right:hover {
+    background-color: #159e5e;
+    transition: 0.4s ease;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Cards                                      */
+/* -------------------------------------------------------------------------- */
+
+
+.Categories .Products .cardss {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 10px;
+    background-color: transparent;
+    margin: 0 30px;
+    padding: 20px;
+}
+
+.Categories .Products .cardd {
+    display: block;
+    border: 1px solid rgb(229, 229, 229);
+    background-color: transparent;    
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.cardss .cardd:nth-child(1){
+    background-image: url(../Assets/products/image-8.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 120px;
+}
+
+.cardss .cardd:nth-child(2){
+    background-image: url(../Assets/products/image-9.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 120px;
+}
+
+.cardss .cardd:nth-child(3){
+    background-image: url(../Assets/products/image-10.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 120px;
+}
+
+.cardss .cardd:nth-child(4){
+    background-image: url(../Assets/products/image-11.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 120px;
+}
+
+.cardss .cardd:nth-child(5){
+    background-image: url(../Assets/products/image-12.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 120px;
+}
+
+.cardss .cardd h3{
+    margin-top: -10px;
+    font-family: "Quicksand",sans-serif;
+
+}
+.cardss .cardd span{
+    color: #838383;
+    font-size: .7142857143rem;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0px;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+.cardd .price span:nth-child(1){
+    color: #3bb77e;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cardd .price span:nth-child(2){
+    color: #838383;
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+.cardd .payment{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cardd .add{
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: "Quicksand",sans-serif;
+    background-color: #def9ec;
+    color: #3bb77e;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.cardd .add:hover{
+    transform: scale(1.2);
+}
+
+.cardss .cardd .stars{
+    margin-top: -10px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Seller_section                               */
+/* -------------------------------------------------------------------------- */
+
+.Seller {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 30px;
+}
+.Seller .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 30px;
+}
+.Seller .box h1 {
+    font-family: 'Quicksand', sans-serif;    
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 30px 0;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Cards_Creation                               */
+/* -------------------------------------------------------------------------- */
+.Seller .box .cards {
+    display: grid;
+    grid-template-columns: repeat(5, 305px);
+    gap: 10px;
+}
+.Seller .box .cards .card {
+    display: block;
+    border: 1px solid rgb(221, 218, 218);
+    background-color: transparent;    
+    padding: 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Card_Content                                */
+/* -------------------------------------------------------------------------- */
+
+.Seller .box .cards .card .first_section img {
+    width: 280px;
+}
+.Seller .box .cards .card .first_section span {
+    font-size: 15px;
+    color: rgb(131, 131, 131);
+}
+.Seller .box .cards .card .first_section h4 {   
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Price_section                               */
+/* -------------------------------------------------------------------------- */
+.Seller .box .cards .card .Price_block  {
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+
+}  
+.Seller .box .cards .card .Price_block .price {
+    color: #1fcc7b;
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+.Seller .box .cards .card .Price_block span:last-child {
+    color: grey;   
+    text-decoration: line-through;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                Cards_button                                */
+/* -------------------------------------------------------------------------- */
+.Seller .box .cards .card .div_btn {
+    width: 270px;
+    height: 47px;
+    background-color: #1fcc7b;
+    font-size: 1rem;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.Seller .box .cards .card .div_btn button {
+    background: transparent;
+    width: 116px;
+    height: 20px;
+    border: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.Seller .box .cards .card .div_btn button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           Scaling_button_content                           */
+/* -------------------------------------------------------------------------- */
+.Seller .box .cards .card .div_btn:hover * {
+    transform: scale(1.1);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Form_card                                 */
+/* -------------------------------------------------------------------------- */
+
+.Seller .box .cards .card:last-child {
+    background-color: #FFF7E6;
+}
+
+.Seller .box .cards .card:last-child .first_text_section {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.Seller .box .cards .card:last-child .first_text_section h1 { 
+    padding: 10px;
+    font-size: 2rem;
+}
+.Seller .box .cards .card:last-child .first_text_section h5 {
+    font-size: 1.1rem;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Input_Email_Pass_creation                     */
+/* -------------------------------------------------------------------------- */
+.Seller .box .cards .card:last-child form .email_div, .pass {
+    width: 280px;
+    height: 45px;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.Seller .box .cards .card:last-child form .email_div input, .pass input {
+    width: 190px;
+    margin-left: 10px;
+    border: 0;
+    font-size: 1rem;
+}
+.Seller .box .cards .card:last-child form .email_div input:focus, .pass input:focus {
+    border: 0;
+    outline: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               margin_for_divs                              */
+/* -------------------------------------------------------------------------- */
+.Seller .box .cards .card:last-child form div {
+    margin: 10px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               register_button                              */
+/* -------------------------------------------------------------------------- */
+
+.Seller .box .cards .card:last-child form button {
+    width: 270px;
+    height: 47px;
+    background-color: #1fcc7b;
+    font-size: 1rem;
+    padding: 8px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    margin-top: 35px;
+}
+.Seller .box .cards .card:last-child form button:hover {
+    transform: scale(1.1);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             Daily_best_sellers                             */
+/* -------------------------------------------------------------------------- */
+
+.top_sellers {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    /* gap: 50px; */
+    padding: 190px 60px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Heading                                  */
+/* -------------------------------------------------------------------------- */
+.top_sellers .sells h2 {
+    padding: 20px 0;
+    text-shadow: 0 0 25px #2b19d1, 0 0 50px #2802ff;
+    position: relative;
+}
+
+.top_sellers .sells h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 3.6px;
+    background-color: #1fcc7b;
+    z-index: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                        the_image_product_and_content                       */
+/* -------------------------------------------------------------------------- */
+.top_sellers .sells .product  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px 0;
+    gap: 30px;
+}
+.top_sellers .sells .product > img  {
+    background-color: #F2F3F7;
+}
+
+.top_sellers .sells .product .cont .stars {
+    margin: 5px 0 20px 0;
+
+}
+.top_sellers .sells .product .cont .price span:nth-child(1) {
+    color: #159e5e;
+    font-size: 1.3rem;
+}
+.top_sellers .sells .product .cont .price span:nth-child(2) {
+    color: #838383;
+    text-decoration: line-through;
+}

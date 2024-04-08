@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../Assets/iconss/fav.png">
+        <link rel="stylesheet" href="../Styles/css.css">
+        <link rel="stylesheet" href="../Styles/Main.css">
+        <script type="module" src="../Script/Header Script.js"></script>
+        <script type="module" src="../Script/app.js"></script>
+        <title>GROCY</title>
+
+        <header>
+            <div class="search_bar">    
+                <div class="dropdown">
+                    <select name="categories" id="categories">
+                        <option value="All Categories" selected>All Categories</option>
+                        <option value="Foods">Foods</option>
+                        <option value="Health">Health</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Fashions">Fashions</option>
+                    </select>
+                </div>
+
+                <div class="line">|</div>
+
+                <input type="search" class="search_input" placeholder="search...">
+
+                <div class="search_icon"></div>
+            </div>
+               <div class="options">
+                <div id="wish">
+                  <input type="image" title="favorite items" src="../Assets/iconss/heart.svg" class="heart"/>
+                  <button class="wishlist"> Wishlist </button>
+                </div>
+
+                <div  id="cartlist">
+                  <input type="image" title="cart" src="../Assets/iconss/shop-car.svg" class="shop_cart">
+                  <button class="mycart">My cart</button>
+                  <input type="image" src="../Assets/iconss/arrow-down.svg" class="cart_arrow">
+                </div>
+
+                <div id="signup" >
+                    <input type="image" src="../Assets/iconss/user.png" class="profile_logo">
+                    <button  class="login_button">Log in / Sign in</button>
+                    <input type="image" src="../Assets/iconss/arrow-down.svg" class="profile_arrow">
+                </div>
+                </div>
+
+              <!--
+                <button  class="toggle">
+                   <img src="../Assets/iconss/list.svg">
+                </button>
+              -->
+
+
+        </header>
+    </head>
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 model                                   -->
+<!-- ----------------------------------------------------------------------- -->
+<body> 
+      <div class="model">
+        <button  class="close-model">X</button>
+        <button  class="Signin-page">Sign in</button>
+        <button  class="login-page">Login</button>
+         <!--login form-->
+        <div class="loginform">
+          <div class="text">
+            <h2>LOGIN FORM</h2>
+          </div>
+
+          <input type="email" title="email for login" placeholder="Email" class="login-email" required>
+          <input type="password" title="password for login" placeholder="Password" class="login-pass" required>
+          
+          <div id="textcheck">
+            <label for="check" title="save my data">Remember Me</label>
+            <input type="checkbox" id="check" title="save my data check">
+          </div>
+
+          <button class="login-button" type="submit">Login Now</button>
+          
+          <div class="forgot">
+            <a>Forgot Password ?</a>
+          </div>
+
+        </div>
+
+        <div class="container">
+          <div class="signform">
+            <div class="text1">
+              <h2>LOGIN FORM</h2>
+            </div>
+  
+            <input type="text" title="username for signin" placeholder="User Name" class="Username" required>
+            <input type="email" title="user for login" placeholder="Email" class="signin-email" required>
+            <input type="password" title="password for login" placeholder="Password" class="signin-pass" required>
+            <input type="password" title="confirm password for login" placeholder="Confirm password" class="confirmpass" required>
+  
+            <button class="signin-button" type="submit">Sign in Now</button>
+          </div>
+  
+        </div>
+
+      </div>
+
+
+
+      <div class="overlay"></div>
+    
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 model2                                  -->
+<!-- ----------------------------------------------------------------------- -->
+      <div class="model2">
+        <button  class="close-model2">X</button>
+      
+        <div class="shop-cart-icon">
+          <img src="../Assets/iconss/shopping-cart.png" height="30px" width="30px">
+          <h2>Shopping-Cart</h2>
+        </div>
+        
+        <div class="total-price">
+          <h2>Total: 00$</h2>
+        </div>
+
+      </div>
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Load_Page                                -->
+<!-- ----------------------------------------------------------------------- -->
+
+<section id="load_page" >Loading...</section>
+        
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 nav_bar                                 -->
+<!-- ----------------------------------------------------------------------- -->
+
+<nav>
+  <div class="brows">
+    <img src="../Assets/iconss/layout-grid.svg" alt="pic">
+    <span>Brows All Categories</span>
+  </div>
+
+  <ul>
+     <li><a href="#"><img src="../Assets/iconss/home.svg" alt="home">Home</a></li>
+     <li><a href="#"><img src="../Assets/iconss/hot-deals.svg" alt="hot-deals">Hot deals</a></li>
+     <li><a href="#"><img src="../Assets/iconss/percent.svg" alt="Promotions">Promotions</a></li>
+     <li><a href="#"><img src="../Assets/iconss/megaphone.svg" alt="New-Products">New Products</a></li>
+  </ul>
+
+  <div class="phone">
+      <img src="../Assets/iconss/phone.svg" alt="phone">
+      <span>25245925</span>
+      <span class="span-2">24/7 support center</span>
+  </div>
+</nav>
+<!-- ----------------------------------------------------------------------- -->
+<!--                                hero-section                             -->
+<!-- ----------------------------------------------------------------------- -->
+
+      <div class="hero-section">
+        <img  src="../Assets/main/hero-img.png" height="513px" width="642px">
+        <section class="hero-content">
+          <h1>Dont miss our daily<br>amazing deals.</h1>
+          <p>Save up to 60% off on your first order</p>
+          <div id="subscribe">
+            <div id="icon-sub"></div>
+            <div id="line-sub">|</div>
+            <input type="email" id="mail-sub" placeholder="Enter your email address">
+            <button type="submit" id="subscribe-button">Subscribe</button>
+          </div>
+        </section>
+      </div>
+
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                          Explore_Categories_1                           -->
+  <!-- ----------------------------------------------------------------------- -->
+  <section id="Explore_cate">
+    <div id="Categories_head">
+
+        <h1>ExploreCategories</h1>
+        
+        <ul id="Categories_list">
+            <li class="All" data-name="All"> All </li>
+            <li class="Vegatables" data-name="Vegatables"> Vegatables </li>
+            <li class="Fruits" data-name="Fruits"> Fruits </li>
+            <li class="Drinks" data-name="Drinks"> Drinks </li>
+            <li class="Meat" data-name="Meat"> Meat </li>
+        </ul>
+
+    </div>
+
+    <div id="products_cards">
+        <div class="left_arrow arrow"> <img alt="left arrow" src="../Assets/iconss/arrow-left.svg"/> </div>
+        <div data-name="All Fruits" class="peach"> <img alt="peach img" src="../Assets/products/image-1.png"/> <h3>Peach</h3> <p>20 Items</p> </div>
+        <div data-name="All Vegatables" class=" vegatables"> <img alt="vegatables img" src="../Assets/products/image-2.png"/> <h3>Vegatables</h3> <p>30 Items</p> </div>
+        <div data-name="All Fruits" class="strawberry"> <img alt="strawberry img" src="../Assets/products/image-3.png"/> <h3>Strawberry</h3> <p>2 Items</p> </div>
+        <div data-name="All Fruits" class="apple"> <img alt="apple img" src="../Assets/products/image-4.png"/> <h3>Apple</h3> <p>15 Items</p> </div>
+        <div data-name="All Fruits" class="orange"> <img alt="orange img" src="../Assets/products/image-5.png"/> <h3>Orange</h3> <p>10 Items</p> </div>
+        <div data-name="All Vegatables" class="All Vegatables potato"> <img alt="potato img" src="../Assets/products/image-6.png"/> <h3>Potato</h3> <p>21 Items</p> </div>
+        <div class="right_arrow arrow"> <img alt="right arrow" src="../Assets/iconss/arrow-right.svg"/> </div>
+    </div>
+</section>     
+
+
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                          Explore_Categories_2                           -->
+<!-- ----------------------------------------------------------------------- -->
+
+<section class="Categories">
+            
+  <div class="first_div">
+      <h1>ExploreCategories</h1>
+
+      <ul>
+          <li><a href="#">All</a></li>
+          <li><a href="#">Vegetables</a></li>
+          <li><a href="#">Fruits</a></li>
+          <li><a href="#">Coffe&teas</a></li>
+          <li><a href="#">Meat</a></li>
+      </ul>
+  </div>
+
+  <section class="Products">
+<!-- Left_arrow -->
+      <div class="left"></div>
+<!-- Cards_section  -->
+      <section class="cardss">
+          <div class="cardd">
+            <p>vegetables</p>
+            <h3>Redish 500g</h3>
+            <div class="stars">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star-space.svg">
+            </div>
+            <span>
+              By<b>Myfood</b>
+            </span>
+           <div class="payment">
+              <div class="price">
+               <span>$1.5</span>
+               <span>$2.99</span>
+              </div>
+              <button  class="add">
+                <img src="../Assets/iconss/shopping-cart-2.svg" alt="">
+                <p>Add</p>
+              </button>
+            </div>
+
+
+
+
+
+
+          </div>
+
+          <div class="cardd">
+            <p>vegetables</p>
+            <h3>Potatos 1kg</h3>
+            <div class="stars">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star-space.svg">
+            </div>
+            <span>
+              By<b>Myfood</b>
+            </span>
+            <div class="payment">
+              <div class="price">
+               <span>$22.5</span>
+               <span>$2.99</span>
+              </div>
+              <button  class="add">
+                <img src="../Assets/iconss/shopping-cart-2.svg" alt="">
+                <p>Add</p>
+              </button>
+            </div>
+
+          </div>
+
+          <div class="cardd">
+            <p>vegetables</p>
+            <h3>Tomatos 200g</h3>
+            <div class="stars">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star-space.svg">
+            </div>
+            <span>
+              By<b>Myfood</b>
+            </span>
+            <div class="payment">
+              <div class="price">
+               <span>$21</span>
+               <span>$2.99</span>
+              </div>
+              <button  class="add">
+                <img src="../Assets/iconss/shopping-cart-2.svg" alt="">
+                <p>Add</p>
+              </button>
+            </div>
+
+
+
+
+          </div>
+          
+          <div class="cardd">
+            <p>vegetables</p>
+            <h3>Broccoli 1kg</h3>
+            <div class="stars">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star-space.svg">
+            </div>
+            <span>
+              By<b>Myfood</b>
+            </span>
+            <div class="payment">
+              <div class="price">
+               <span>$2.9</span>
+               <span>$2.99</span>
+              </div>
+              <button  class="add">
+                <img src="../Assets/iconss/shopping-cart-2.svg" alt="">
+                <p>Add</p>
+              </button>
+            </div>
+
+
+
+          </div>
+
+          <div class="cardd">
+            <p>vegetables</p>
+            <h3>Green Beans 250g</h3>
+            <div class="stars">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star.svg">
+              <img src="../Assets/iconss/star-space.svg">
+            </div>
+            <span>
+              By<b>Myfood</b>
+            </span>
+            <div class="payment">
+              <div class="price">
+               <span>$50</span>
+               <span>$2.99</span>
+              </div>
+              <button  class="add">
+                <img src="../Assets/iconss/shopping-cart-2.svg">
+                <p>Add</p>
+              </button>
+            </div>
+
+
+
+
+          </div>
+      </section>
+<!-- Right_arrow -->
+      <div class="right" ></div>
+  </section>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Explore_cate                             -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                Banner_1                                 -->
+<!-- ----------------------------------------------------------------------- -->
+        <div class="banner_1">
+          <div class="details">
+              <span>free delivery</span>
+
+              <h2>Free delivery over $50</h2>
+
+              <h4>
+                  Shop 50$ product and get free <br/>
+                  delivery anywhere
+              </h4>
+
+              <button value="Shop Now" type="button">Shop Now  <img class="button_arrow" src="../Assets/iconss/arrow-right-light.png" width="18px" height="18px"/></button>
+          </div>
+
+          <img class="man" src="../Assets/main/offer1-img.png"/>
+
+      </div>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 Banner 2                                -->
+<!-- ----------------------------------------------------------------------- -->
+    <section class="banner-2">
+      <div class="banner-img1">
+        <div class="banner-img2"></div>
+      </div>
+         <div class="banner-content">
+           <p>60% off</p>
+           <h3>Organic Food</h3>
+           <p>Save up to 60% off on your<br>first order</p>
+           <button id="ordernow">
+            <b>Order Now</b>
+            <img src="../Assets/iconss/arrow-right-light.png">
+           </button>
+         </div>
+    </section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                             Seller_section                              -->
+<!-- ----------------------------------------------------------------------- -->
+
+<section class="Seller">
+
+  <div class="box">
+      <h1>Daily best seller</h1>
+
+      <section class="cards">
+          <!-- ----------------------------------------------------------------------- -->
+          <!--                               First_card                                -->
+          <!-- ----------------------------------------------------------------------- -->
+          <div class="card">
+<!-- first_section_image_type -->
+              <section class="first_section">
+                  <img src="../Assets/products/image-21.png" alt="product">
+                  <span>coffe & tea</span>
+                  <h4>Coffe 1kg</h4>
+              </section>
+<!-- Stars_section -->
+              <div class="starts">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star-space.svg" alt="star">
+              </div>
+              
+
+              <span class="span-2">By <span style="color: rgb(59, 183, 126);">mr.food</span></span> <br>
+<!-- Price -->
+              <div class="Price_block">
+                  <span class="price">20$</span> 
+                  <span>18$</span>
+              </div>
+
+              <span>Sold:20/50</span> <br>
+<!-- Button -->
+              <div class="div_btn">
+                  <button> 
+                      <img src="../Assets/iconss/shopping-cart.svg" alt="icon">
+                      Add to cart
+                  </button>
+              </div>
+          </div>
+          <!-- ----------------------------------------------------------------------- -->
+          <!--                               Second_card                               -->
+          <!-- ----------------------------------------------------------------------- -->
+          <div class="card">
+<!-- first_section_image_type -->
+              <section class="first_section">
+                  <img src="../Assets/products/image-20.png" alt="product">
+                  <span>Meat</span>
+                  <h4>Halal Sausage 350g</h4>
+              </section>
+<!-- Stars_section -->
+              <div class="starts">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star-space.svg" alt="star">
+              </div>
+              
+
+              <span class="span-2">By <span style="color: rgb(59, 183, 126);">mr.food</span></span> <br>
+<!-- Price -->
+              <div class="Price_block">
+                  <span class="price">4$</span> 
+                  <span>10$</span>
+              </div>
+
+              <span>Sold: 7/50</span> <br>
+<!-- Button -->
+              <div class="div_btn">
+                  <button> 
+                      <img src="../Assets/iconss/shopping-cart.svg" alt="icon">
+                      Add to cart
+                  </button>
+              </div>
+          </div>
+
+          <!-- ----------------------------------------------------------------------- -->
+          <!--                               Third_card                                -->
+          <!-- ----------------------------------------------------------------------- -->
+          <div class="card">    
+<!-- first_section_image_type -->
+              <section class="first_section">
+                  <img src="../Assets/products/image-14.png" alt="product">
+                  <span>coffe & tea</span>
+                  <h4>Green Tea 250g</h4>
+              </section>
+<!-- Stars_section -->
+              <div class="starts">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star-space.svg" alt="star">
+              </div>
+              
+
+              <span class="span-2">By <span style="color: rgb(59, 183, 126);">mr.food</span></span> <br>
+<!-- Price -->
+              <div class="Price_block">
+                  <span class="price">3$</span> 
+                  <span>7$</span>
+              </div>
+
+              <span>Sold: 32/50</span> <br>
+<!-- Button -->
+              <div class="div_btn">
+                  <button> 
+                      <img src="../Assets/iconss/shopping-cart.svg" alt="icon">
+                      Add to cart
+                  </button>
+              </div>
+                                      
+          </div>
+
+          <!-- ----------------------------------------------------------------------- -->
+          <!--                               Forth_card                                -->
+          <!-- ----------------------------------------------------------------------- -->
+          <div class="card">    
+<!-- first_section_image_type -->
+              <section class="first_section">
+                  <img src="../Assets/products/image-13.png" alt="product">
+                  <span>Vegetables</span>
+                  <h4>Onion 1kg</h4>
+              </section>
+<!-- Stars_section -->
+              <div class="starts">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star.svg" alt="star">
+                  <img src="../Assets/iconss/star-space.svg" alt="star">
+              </div>
+              
+
+              <span class="span-2">By <span style="color: rgb(59, 183, 126);">mr.food</span></span> <br>
+<!-- Price -->
+              <div class="Price_block">
+                  <span class="price">0.50$</span> 
+                  <span>2$</span>
+              </div>
+
+              <span>Sold: 3/50</span> <br>
+<!-- Button -->
+              <div class="div_btn">
+                  <button> 
+                      <img src="../Assets/iconss/shopping-cart.svg" alt="icon">
+                      Add to cart
+                  </button>
+              </div>
+
+          </div>
+
+          <!-- ----------------------------------------------------------------------- -->
+          <!--                                Form_card                                -->
+          <!-- ----------------------------------------------------------------------- -->
+          <div class="card">
+
+              <div class="first_text_section">
+                  <h1>10% off</h1>
+                  <h5>For new member sign up at the first time</h5>
+              </div>
+
+
+              <form action="">
+
+                  <label>Email address</label>
+                  <div class="email_div">
+                      <img src="../Assets/iconss/mail.svg" alt="icon">
+                      <input type="email" placeholder="ex800@gmail.com">
+                  </div>
+
+                  <label>Password</label>
+                  <div class="pass">
+                      <img src="../Assets/iconss/key.svg" alt="icon">
+                      <input type="password" placeholder="Maximum 8 character">
+                  </div>
+
+                  <button>Register now</button>
+              </form>
+              
+          </div>
+      </section>
+  </div>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                               Top_sellers                               -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="top_sellers">
+    
+  <div class="sells">
+      <h2>Top Sells</h2>
+      
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-4.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Product_2                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-6.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+      
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Product_3                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-7.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              Rated_section                              -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="sells">
+      <h2>Top Rated</h2>
+      
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-4.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Product_2                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-6.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+      
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Product_3                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-7.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  <div class="sells">
+      <h2>Trending items</h2>
+      
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-4.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Product_2                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-6.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+      
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Product_3                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-7.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             Recently_added                              -->
+  <!-- ----------------------------------------------------------------------- -->
+  <div class="sells">
+      <h2>Recently added</h2>
+      
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-4.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Product_2                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-6.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+      
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                Product_3                                -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="product">
+          <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/products/image-7.png" alt="product">
+          
+          <div class="cont">
+              <h3>Orange 1kg</h3>
+              <div class="stars">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star.svg" alt="star">
+                  <img src="https://abdelrahmanahmed20021.github.io/GROCY/images/icons/star-space.svg" alt="star_empty">
+              </div>
+
+              <div class="price">
+                  <span>0.50$</span> 
+                  <span>2$</span>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+</section>
+
+<!----------------------------------------------------------------------------->
+<section class="summary">
+
+  <div class="best">
+
+    <div class="Deals">
+      <p>Best Prices & Deals</p>
+      <p>Don't miss our daily amazing deals and<br> prices</p>
+    </div>
+
+  </div>
+
+  <div class="best2">
+
+    <div class="Deals">
+      <p>Refundable</p>
+      <p>If your items have damage we agree to <br>refund it</p>
+    </div>
+    
+  </div>
+
+  <div class="best3">
+
+    <div class="Deals">
+      <p>Free delivery</p>
+      <p>Do purchase over $50 and get free <br>delivery anywhere</p>
+    </div>
+    
+  </div>
+
+
+</section>
+
+<!----------------------------------------------------------------------------->    
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                footer                                   -->
+<!-- ----------------------------------------------------------------------- -->
+
+<footer>
+  <hr id="hr1">
+  <span class="first-footer">
+    <div class="info">
+
+      <div class="all">
+        <div id="logo">
+          <img src="../Assets/iconss/logo.svg">
+        </div>
+
+
+        <span class="Info">
+          <img src="../Assets/iconss/map-pin.svg">
+          <button type="submit">Address: 1762 School House Road</button>
+        </span>
+
+        <span class="Info">
+          <img src="../Assets/iconss/call.svg">
+          <button type="submit">Call Us: 01286292650</button>
+        </span>
+
+        <span class="Info">
+          <img src="../Assets/iconss/mail-2.svg">
+          <button type="submit">Email: ex800@gamil.com</button>
+        </span>
+
+        <span class="Info">
+          <img src="../Assets/iconss/clock-9.svg">
+          <button type="submit">Work hours: 8:00 - 20:00, Sunday - Thursday</button>
+        </span>
+      </div>
+
+      <span class="all2">
+        <p>Account</p>
+        <button class="information">Wishlist</button>
+        <button class="information">Cart</button>
+        <button class="information">Track Order</button>
+        <button class="information">Shipping Details</button>
+      </span>
+
+      <span class="all2">
+        <p>Useful links</p>
+        <button class="information">About Us</button>
+        <button class="information">Conact</button>
+        <button class="information">Hot deals</button>
+        <button class="information">Promotions</button>
+        <button class="information">New products</button>
+      </span>
+
+      <span class="all2">
+        <p>Help Center</p>
+        <button class="information">Payments</button>
+        <button class="information">Refund</button>
+        <button class="information">Checkout</button>
+        <button class="information">Shipping</button>
+        <button class="information">Q&A</button>
+        <button class="information">Privacy Policy</button>
+      </span>
+
+    </div>
+
+  </span>
+
+
+  <hr id="hr2">
+  <span class="second-footer">
+   <p>© 2022 by <span>Abdalrhman Eldip ❤</span>, All rights reserved</p>
+  <div class="payment-img">
+    <img src="../Assets/main/payment.png">
+  </div>
+  <nav class="social-buttons">
+    <button class="Button" type="submit"></button>
+    <button class="Button" type="submit"></button>
+    <button class="Button" type="submit"></button>
+    <button class="Button" type="submit"></button>
+  </nav>
+ </span>
+
+</footer>
+   
+  
+</body>    
+    
+</html>

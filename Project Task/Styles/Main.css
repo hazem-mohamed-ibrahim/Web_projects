@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+@media screen and (max-width : 766px) {
+
+
+    .hero-section img{
+       display: none;
+    }
+
+    .hero-section{
+        padding-right: 800px;
+    }
+
+    #subscribe input{
+       padding-right: 250px;
+    }
+
+    .options{
+        position: relative;
+        top: 100px;
+        left: -300px;
+    }
+    #wish{
+        display: none;
+    }
+    #cartlist{
+        display: none;
+    }
+    #signup{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .search_input , .dropdown , .search_icon{
+        display: none;
+    }
+
+    .line{
+        display: none;
+    }
+
+    ul li{
+        display: none;
+    }
+    #products_cards{
+       overflow-x: auto;
+    }
+    #products_cards::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .right , .left{
+        display: none;
+    }
+    .Categories{
+        overflow-x: auto;
+    }
+
+    .banner-1{
+        display: flex;
+    }
+    .banner-2{
+        display: flex;
+    }
+    .Dealsa{
+        display: flex;
+    }
+
+
+
+
+
+
+}
+
+
+
+/*****************************************************************************************************************/
+
+header{
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    padding: 15px 15px 0 15px;
+    background-image: url(../Assets/iconss/logo.svg);
+    background-position: 30px 15px;
+    background-repeat: no-repeat;
+    border-bottom: .1px solid rgba(231,231,231,.9058823529);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.toggle{
+    height: 20px;
+    width: 40px;
+    margin: 45px 680px;
+    outline: 0;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+header .dropdown #categories{
+    background-color: rgba(231,231,231,.9058823529);
+    color: #253d4e;
+    width: 130px;
+    height:38px;
+    padding-left:14px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.search_bar{
+    display: flex;
+    transform: translateX(28%);
+    flex-direction: row;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.line{
+    color: #8f8d8d;
+    z-index: 1;
+    transform: translateY(8px);
+}
+
+.search_input{
+    padding: 10px;
+    height: 38px;
+    width: 196px;
+    background-color: rgba(231,231,231,.9058823529);
+    color: #253d4e;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 150;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transform: translateX(-5px);
+}
+
+.search_icon{
+    margin: 0px -5.1px;
+    width: 40px;
+    height: 38px;
+    background-color: #3bb77e;
+    cursor: pointer;
+    background-image: url(../Assets/iconss/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search_icon:hover{
+    background-color: #040101;
+    transition: all .4s ease;
+}
+
+
+header .search_icon .lens{
+
+    transform: translate(-50%, -50%);
+}
+header .options{
+    transform: translateX(70%);
+    margin-top: -40px;
+    display: flex;
+    padding: 0;
+   
+    
+} 
+
+/*****************************************************************************************************************/
+
+/* wish is the div holds the heart image and wishlist button */
+
+#wish{
+    cursor: pointer;
+    padding: 0;
+}
+
+.heart{
+    cursor: pointer;
+    padding: 0;
+}
+
+.wishlist{
+    background-color: white;
+    margin: 19px 20px ;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+    transform: translate(-20%,-50%);
+    padding: 0;
+}
+
+/*****************************************************************************************************************/
+
+/* cartlist is the div holds my cart button and shop_cart image and the down arrow image */
+
+#cartlist{
+    cursor: pointer;
+    padding: 0 3px;
+}
+
+
+.mycart{
+    background-color: white;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+    transform: translateY(-15px);
+    padding: 0 3px;
+}
+
+.shop_cart{
+    cursor: pointer;
+    transform: translateX(-6px);
+    padding: 0 3px;
+}
+
+.cart_arrow{
+    cursor: pointer;
+    transform: translateY(-4px);
+    padding: 0 9px;
+}
+
+/*****************************************************************************************************************/
+
+/* signup is the div holds the profile image and login button and down arrow image */
+
+#signup{
+    cursor: pointer;
+    margin-left: 0px;
+    padding: 0 6px;
+}
+
+.login_button{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .9rem;
+    border: none;
+    font-size: 15px;
+    font-weight: 980;
+    cursor: pointer;
+    padding: 0 6px;
+ 
+}
+
+.profile_arrow{
+    cursor: pointer;
+    padding: 0 6px;
+    transform: translateY(4px);
+}
+
+.profile_logo{
+    height: 25px;
+    cursor: pointer;
+    transform: translateY(7px);
+    padding: 0 6px;
+}
+
+
+/*****************************************************************************************************************/
+
+         /*  log in form when you  press log in button in model*/
+/*****************************************************************************************************************/
+
+
+.model{
+   position: fixed;
+   top: 50%;
+   transform: translate(-59%,-50%);
+   border: 1px solid rgb(255, 255, 255);
+   background-color: white;
+   width: 300px;
+   height: 100%;
+   z-index: 1;
+   display: none;
+   animation: .6s ease-in-out myslide ;   
+   transition: left .8s ease-in-out;
+}
+
+@keyframes  myslide{
+    0%{
+        left: 10%;
+    }
+
+    100%{
+        left: 92.2%;
+    }
+}
+
+
+.close-model{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: xx-large;
+    position: relative;
+    top: 20px;
+    left: 260px;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    -webkit-transition-property: -webkit-transform ;
+    transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+
+.close-model:hover{
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+
+.Signin-page{
+    background-color: #ffffff;
+    color: #3bb77e;
+    border: 1px solid #3bb77e;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    transform: translate(150%,630%);
+}
+
+.Signin-page:hover{
+    background-color: #3bb752;
+    color: #def9ec;
+    transition: all .4s ease;
+}
+
+.login-page{
+    background-color: #ffffff;
+    color: #3bb77e;
+    border: 1px solid #3bb77e;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    transform: translate(-64%,630%);
+}
+
+.login-page:hover{
+    background-color: #3bb752;
+    color: #def9ec;
+    transition: all .4s ease;
+}
+
+
+.text{
+    text-align: center;
+    font: bolder;
+    padding: 0px 0px 0px 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    transform: translateY(-10px);
+    font-weight: bolder;
+}
+
+.loginform{
+    border: 1px solid  #3bb752;
+    margin: 250px 15px 0px 15px;
+    height: 250px;
+    padding: 0px 30px 0px 10px;
+}
+
+.login-email{
+    border: 1px solid #3bb752;
+    width: 240px;
+    outline: none;
+    height: 35px;
+    transform: translateY(-20px);
+}
+
+.login-pass{
+    border: 1px solid #3bb752;
+    width: 240px;
+    outline: none;
+    height: 35px;
+    transform: translateY(-8px);
+}
+
+.login-button{
+    height: 35px;
+    width: 245px;
+    background-color: #def9ec;
+    color: #3bb77e;
+    border-color: #3bb77e;
+    border: 1px solid #3bb77e;
+    transform: translateY(7px);
+    font-size: .9rem;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.login-button:hover{
+    background-color: #3bb752;
+    color: #def9ec;
+    transition: all .4s ease;
+}
+
+#textcheck{
+    color: #3bb77e;
+    padding: 1px 30px 0px 0px;
+    cursor: pointer;
+    font-size: .87rem;
+    font-family: 'Quicksand', sans-serif;
+}
+#check{
+    transform: translateX(129px);
+}
+
+.forgot{
+    color: #00b862;
+    transform: translateY(17px);
+    padding: 0px 0px 0px 70px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .78rem;
+
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: .6s ease-in-out overlayslide ;   
+    transition: left .8s ease-in-out;
+
+}
+@keyframes  overlayslide{
+    
+    0%{
+        left: 10%;
+    }
+
+    100%{
+        left: 92.2%;
+    }
+}
+
+
+
+/**************************************************************************/
+
+/*         sign in form when you  press sign in button in model          */
+/***************************************************************************************/
+
+
+.signform{  
+    border: 1px solid  #3bb752;
+    margin: 250px 15px 0px 15px;
+    height: 290px;
+    padding: 0px 30px 0px 10px;
+    display: none;
+}
+
+
+.text1{
+    text-align: center;
+    font: bolder;
+    padding: 0px 0px 0px 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    transform: translateY(-10px);
+    font-weight: bolder;
+}
+
+.Username{
+    border: 1px solid #3bb752;
+    width: 240px;
+    outline: none;
+    height: 35px;
+    transform: translateY(-20px);
+}
+
+.signin-email{
+    border: 1px solid #3bb752;
+    width: 240px;
+    outline: none;
+    height: 35px;
+    transform: translateY(-10px);
+}
+
+.signin-pass{
+    border: 1px solid #3bb752;
+    width: 240px;
+    outline: none;
+    height: 35px;
+    transform: translateY(0px);
+}
+
+.confirmpass{
+    border: 1px solid #3bb752;
+    width: 240px;
+    outline: none;
+    height: 35px;
+    transform: translateY(10px);
+}
+
+.signin-button{
+    height: 35px;
+    width: 245px;
+    background-color: #def9ec;
+    color: #3bb77e;
+    border-color: #3bb77e;
+    border: 1px solid #3bb77e;
+    transform: translateY(20px);
+    font-size: .9rem;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.signin-button:hover{
+    background-color: #3bb752;
+    color: #def9ec;
+    transition: all .4s ease;
+}
+
+
+.Signin-page1{
+    background-color: #ffffff;
+    color: #3bb77e;
+    border: 1px solid #3bb77e;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    transform: translate(150%,630%);
+}
+
+.Signin-page1:hover{
+    background-color: #3bb752;
+    color: #def9ec;
+    transition: all .4s ease;
+}
+
+.login-page1{
+    background-color: #ffffff;
+    color: #3bb77e;
+    border: 1px solid #3bb77e;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    transform: translate(-64%,630%);
+}
+
+.login-page1:hover{
+    background-color: #3bb752;
+    color: #def9ec;
+    transition: all .4s ease;
+}
+/*******************************************************************************************/
+
+
+/************************************************/
+.model2{
+    position: fixed;
+    top: 50%;
+    left: 94.2%;
+    transform: translate(-59%,-50%);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    width: 218px;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    animation: .6s ease-in-out myslide2 ;  
+    transition: left .8s ease-in-out;
+}
+
+@keyframes  myslide2{
+
+
+    0%{
+        left: 10%;
+    }
+
+    100%{
+        left: 94.2%;
+    }
+}
+
+.close-model2{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: xx-large;
+    position: relative;
+    top: 20px;
+    left: 170px;
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    transition: 1s ease-in-out ;
+    -webkit-transition-property: -webkit-transform ;
+    transition-property: -webkit-transform;
+    -webkit-transition-duration: .7s;
+    transition-duration: .7s;
+}
+
+.close-model2:hover{
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+
+
+.shop-cart-icon{
+   padding: 30px 30px 0px 20px;
+   
+}
+
+.shop-cart-icon h2{
+    color: #3bb77e;
+    font-size: 1.3rem;
+    position: relative;
+    top: -50px;
+    left: 40px;
+}
+
+
+.total-price{
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+
+    -webkit-user-drag: none;
+    scroll-behavior: smooth;
+    background-color: #3bb77e;
+    color: #fff;
+
+    text-align: center;
+    font-size: medium;
+    margin: 0px 20px 0px 20px;
+    margin-top: -35px;
+}
+
+
+/*****srollbar style***/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #040101;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #00b862;
+}
+/**********************/
